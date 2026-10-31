@@ -1,201 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Services — Spades Solutions</title>
-  <meta name="description" content="Our two core services: custom apparel printing & embroidery, and professional sounds & lights for events. Expand each to see what's included." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/styles.css?v=2" />
+  <title>Services | Spades Solutions</title>
+  <meta name="description" content="Apparel and printing from a single piece, and event logistics: sound, lighting, staging, transport, crew and on-site coordination in Colombo and surrounds." />
+  <meta name="theme-color" content="#0A1628" />
+  <link rel="icon" type="image/png" href="assets/favicon-64.png" />
+  <link rel="preload" href="assets/fonts/marcellus-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/figtree-latin-var.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="assets/css/styles.css?v=5" />
 </head>
 <body>
-  <!-- ========== HEADER ========== -->
+  <a class="skip" href="#main">Skip to Content</a>
+
   <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="index.html" aria-label="Spades Solutions home">
-        <img class="brand-logo" src="assets/logo-lockup.png" alt="Spades Solutions" />
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Spades Solutions, home">
+        <img src="assets/spade-white-96.png" alt="" width="96" height="102" />
+        <span aria-hidden="true">SPADES SOLUTIONS</span>
       </a>
-      <nav class="nav-links" aria-label="Primary">
-        <a class="link" href="index.html">Home</a>
-        <a class="link is-active" href="services.html">Services</a>
-        <a class="link" href="contact.html">Contact</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <svg class="i-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="services.html" aria-current="page">Services</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn--solid" href="contact.html">Get a Quote</a>
       </nav>
-      <div class="nav-actions">
-        <a class="btn btn--primary btn-quote" href="contact.html">Get a Quote</a>
-        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
-      </div>
     </div>
   </header>
 
-  <main>
-    <!-- ========== PAGE HERO ========== -->
-    <section class="section section--tight">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">Our services</span>
-          <h1 class="title" style="font-family:var(--font-display);font-size:var(--step-4)">Two services. <em style="color:var(--navy);font-style:italic">One standard.</em></h1>
-          <p class="lede">We make on-brand apparel and we produce the sound and light that brings your events to life. Expand each service below to see exactly what's included.</p>
-        </div>
-
-        <!-- ========== SERVICES ACCORDION ========== -->
-        <div class="svc-list">
-
-          <!-- Service 01 — Printing -->
-          <article class="acc is-open" id="printing">
-            <button class="acc-head" aria-expanded="true">
-              <span class="idx">01</span>
-              <span class="icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2M7 14h10v7H7z"/></svg>
-              </span>
-              <span class="ttl">
-                <h3>Custom Apparel &amp; Printing</h3>
-                <p>Design, print, and embroider garments at any volume</p>
-              </span>
-              <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span>
-            </button>
-            <div class="acc-panel">
-              <div class="acc-panel-inner">
-                <div class="acc-body">
-                  <div class="sub-grid">
-                    <div class="sub">
-                      <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Bulk / Mass Printing</h4>
-                      <p>High-volume t-shirts, polos, and hoodies with consistent colour and durable finishes — ideal for staff uniforms, campaigns, and merch drops.</p>
-                    </div>
-                    <div class="sub">
-                      <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Embroidery</h4>
-                      <p>Premium stitched logos for polos, caps, and jackets — a refined, long-lasting finish that signals quality.</p>
-                    </div>
-                    <div class="sub">
-                      <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Branded Merchandise</h4>
-                      <p>Full kits for teams and events — coordinated apparel sets that keep your brand consistent across every piece.</p>
-                    </div>
-                    <div class="sub">
-                      <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Design Support</h4>
-                      <p>Not print-ready? We'll help refine your artwork and confirm a mock-up before production begins.</p>
-                    </div>
-                  </div>
-                  <div class="meta">
-                    <div class="m"><b>Minimum order</b>From 1 piece</div>
-                    <div class="m"><b>Turnaround</b>Typically 3–7 days</div>
-                    <div class="m"><b>Best for</b>Corporates · Teams · Events · Individuals</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- Service 02 — Sounds & Lights -->
-          <article class="acc" id="sounds-lights">
-            <button class="acc-head" aria-expanded="false">
-              <span class="idx">02</span>
-              <span class="icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
-              </span>
-              <span class="ttl">
-                <h3>Sounds &amp; Lights</h3>
-                <p>Professional audio and lighting for events of every scale</p>
-              </span>
-              <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span>
-            </button>
-            <div class="acc-panel">
-              <div class="acc-panel-inner">
-                <div class="acc-body">
-                  <div class="sub-grid">
-                    <div class="sub">
-                      <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Sound Systems</h4>
-                      <p>Full PA setups from intimate gatherings to large-scale concerts — crisp, clear audio tuned to your venue.</p>
-                    </div>
-                    <div class="sub">
-                      <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Stage Lighting</h4>
-                      <p>LED wash, spotlights, and intelligent fixtures — designed to set the right mood for every moment of your event.</p>
-                    </div>
-                    <div class="sub">
-                      <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Setup &amp; Teardown</h4>
-                      <p>Full rig installation and strike handled by our crew — you focus on the event, we handle the equipment.</p>
-                    </div>
-                    <div class="sub">
-                      <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> On-site Technical Support</h4>
-                      <p>A dedicated technician on the ground throughout your event so sound and light run exactly as planned.</p>
-                    </div>
-                  </div>
-                  <div class="meta">
-                    <div class="m"><b>Venues</b>Indoor &amp; outdoor</div>
-                    <div class="m"><b>Scheduling</b>Event-date booking</div>
-                    <div class="m"><b>Best for</b>Weddings · Corporate events · Concerts · School shows</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-
-        </div>
+  <main id="main">
+    <section class="page-head" aria-labelledby="page-title">
+      <div class="wrap">
+        <h1 id="page-title">Services</h1>
+        <p class="lede-l">Apparel and event logistics are booked separately, and each gets its own quote. Here is what each one covers.</p>
       </div>
     </section>
 
-    <!-- ========== PROCESS ========== -->
-    <section class="section section--tight">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">The process</span>
-          <h2 class="title">Simple, transparent, on time.</h2>
-        </div>
-        <div class="steps">
-          <div class="step reveal"><h4>Brief</h4><p>Share your requirements — garments, quantities, event details, and dates.</p></div>
-          <div class="step reveal" data-d="1"><h4>Quote &amp; plan</h4><p>Clear pricing and a confirmed plan of works before anything begins.</p></div>
-          <div class="step reveal" data-d="2"><h4>Production / Prep</h4><p>Apparel printed in-house; AV equipment rigged and tested ahead of your event.</p></div>
-          <div class="step reveal" data-d="3"><h4>Delivery &amp; execution</h4><p>Garments delivered on time; sound and lights operating flawlessly on the day.</p></div>
+    <div class="page-body">
+      <div class="wrap">
+        <section class="panel" id="apparel" aria-labelledby="s-apparel">
+          <div class="panel-head">
+            <span class="rank" aria-hidden="true">A</span>
+            <h2 id="s-apparel">Apparel &amp; Printing</h2>
+            <p class="lede-l">One shirt or a few thousand, printed or embroidered in your colours. Send a logo, a sketch or just the idea.</p>
+            <p class="good-for"><b>Good for:</b> staff uniforms, sports team kits, class and club T-shirts, event and wedding merchandise.</p>
+            <ul class="facts" aria-label="Apparel at a glance"><li>Minimum order: 1 piece</li><li>Turnaround: about 1&ndash;2 weeks</li><li>Free quote</li></ul>
+            <a class="btn btn--solid" href="contact.html#apparel">Get an Apparel Quote</a>
+          </div>
+          <dl>
+            <div><dt>Bulk printing</dt><dd>Large runs of T-shirts and kits, the same colour on every piece.</dd></div>
+            <div><dt>Embroidery</dt><dd>Crests and logos stitched onto polos, caps and jackets.</dd></div>
+            <div><dt>Branded merchandise</dt><dd>Caps, bags and giveaways to go with your shirts.</dd></div>
+            <div><dt>Design support</dt><dd>Send a rough idea and get print-ready artwork back for approval before anything is printed.</dd></div>
+          </dl>
+        </section>
+
+        <section class="panel" id="events" aria-labelledby="s-events">
+          <div class="panel-head">
+            <span class="rank" aria-hidden="true">K</span>
+            <h2 id="s-events">Event Logistics</h2>
+            <p class="lede-l">The physical side of your event: sound, lighting, the stage and the people who set it all up and take it down.</p>
+            <p class="good-for"><b>Good for:</b> corporate launches and conferences, weddings and private parties, concerts and festivals, sports meets and school functions.</p>
+            <ul class="facts" aria-label="Event logistics at a glance"><li>Colombo &amp; surrounds</li><li>Free quote</li></ul>
+            <a class="btn btn--solid" href="contact.html#events">Get an Event Quote</a>
+          </div>
+          <dl>
+            <div><dt>Sound &amp; lighting</dt><dd>PA systems, microphones, stage and ambient lighting, with a technician running it on the day.</dd></div>
+            <div><dt>Staging &amp; structures</dt><dd>Stages, trussing, tents, backdrops and LED screens, sized to your venue.</dd></div>
+            <div><dt>Transport &amp; crew</dt><dd>Equipment brought to the venue, set up before doors open and cleared after the last guest leaves.</dd></div>
+            <div><dt>Planning &amp; coordination</dt><dd>A run sheet agreed in advance, supplier timing handled, and a coordinator on site all day.</dd></div>
+          </dl>
+        </section>
+      </div>
+    </div>
+
+    <section class="band" aria-labelledby="how-title">
+      <div class="wrap">
+        <h2 class="h2" id="how-title">How a Booking Works</h2>
+        <ol class="steps">
+          <li class="step"><b aria-hidden="true">A</b><h3>Send the Brief</h3><p>Date, venue, quantities or a rough idea, by form or WhatsApp.</p></li>
+          <li class="step"><b aria-hidden="true">2</b><h3>Get a Free Quote</h3><p>A price and a plan within one working day.</p></li>
+          <li class="step"><b aria-hidden="true">3</b><h3>Approve &amp; Prep</h3><p>Sign off the artwork, or lock in the equipment and crew for your date.</p></li>
+          <li class="step"><b aria-hidden="true">4</b><h3>Ready by Your Date</h3><p>Shirts in hand by your deadline, or the stage live when doors open.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="close" aria-labelledby="close-title">
+      <div class="wrap">
+        <img src="assets/spade-white-420.png" alt="" width="420" height="444" />
+        <h2 id="close-title">Not Sure Which One You Need?</h2>
+        <p>Describe the event or the order and you&rsquo;ll get a reply within one working day with what fits.</p>
+        <div class="actions">
+          <a class="btn btn--solid" href="contact.html">Request a Quote</a>
+          <!-- TODO(launch): replace 940000000000 with the real WhatsApp number (country code, no +) -->
+          <a class="btn btn--ghost" href="https://wa.me/940000000000" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.6-5.5A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+            Chat on WhatsApp</a>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- ========== CTA BAND ========== -->
-  <section class="cta-band">
-    <div class="container inner">
-      <div class="reveal">
-        <h2>Tell us about your order.</h2>
-        <p>Quantities, garment type, deadline — share what you have and we'll handle the rest.</p>
-      </div>
-      <div class="actions reveal" data-d="1">
-        <a class="btn btn--light btn--lg" href="contact.html">Request a quote</a>
-        <a class="btn btn--wa btn--lg" href="https://wa.me/940000000000" target="_blank" rel="noopener">WhatsApp</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== FOOTER ========== -->
   <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
+    <div class="wrap">
+      <div class="foot">
         <div>
-          <a class="brand" href="index.html" aria-label="Spades Solutions home">
-            <img class="crest" src="assets/Spades_White.png" alt="" aria-hidden="true" />
-            <span class="wordmark"><b>SPADES</b><span>SOLUTIONS</span></span>
+          <a class="brand" href="index.html" aria-label="Spades Solutions, home">
+            <img src="assets/spade-white-96.png" alt="" width="96" height="102" />
+            <span aria-hidden="true">SPADES SOLUTIONS</span>
           </a>
-          <p>Custom apparel, printing, embroidery, and event sound &amp; lighting for businesses, teams, and individuals.</p>
+          <p>Custom apparel &amp; printing. Event logistics. Colombo &amp; surrounds.</p>
         </div>
-        <div class="footer-col">
-          <h5>Explore</h5>
-          <a href="index.html">Home</a>
-          <a href="services.html">Services</a>
-          <a href="contact.html">Contact</a>
+        <div>
+          <h2>Explore</h2>
+          <ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul>
         </div>
-        <div class="footer-col">
-          <h5>Get in touch</h5>
-          <a href="https://wa.me/940000000000" target="_blank" rel="noopener">WhatsApp</a>
-          <a href="https://www.instagram.com/spades_solutions_/" target="_blank" rel="noopener">Instagram</a>
-          <a href="contact.html">Request a quote</a>
+        <div>
+          <h2>Get in Touch</h2>
+          <ul>
+            <li><a href="https://wa.me/940000000000" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="https://www.instagram.com/spades_solutions_/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="contact.html">Request a Quote</a></li>
+          </ul>
         </div>
       </div>
-      <div class="footer-bottom">
-        <span>© <span data-year>2025</span> Spades Solutions. All rights reserved.</span>
-        <span>Designed &amp; built by <a href="https://damiandc.com/" target="_blank" rel="noopener">DDC Web Solutions</a></span>
+      <div class="legal">
+        <span>&copy; <span data-year>2026</span> Spades Solutions</span>
+        <span>Designed &amp; built by <a href="https://damiandc.com/" target="_blank" rel="noopener">DDC Web Services</a></span>
       </div>
     </div>
   </footer>
 
-  <script src="assets/js/main.js?v=2"></script>
+  <script src="assets/js/main.js?v=5"></script>
 </body>
 </html>

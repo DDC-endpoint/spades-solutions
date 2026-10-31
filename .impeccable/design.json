@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-31T14:00:00Z",
+  "title": "Design System: Spades Solutions",
+  "extensions": {
+    "colorMeta": {
+      "silver":      { "role": "primary", "displayName": "Card Silver", "canonical": "#CDD5E0", "tonalRamp": ["oklch(15% 0.018 256.3)", "oklch(26% 0.018 256.3)", "oklch(37% 0.018 256.3)", "oklch(48% 0.018 256.3)", "oklch(60% 0.018 256.3)", "oklch(71% 0.018 256.3)", "oklch(83% 0.018 256.3)", "oklch(95% 0.018 256.3)"] },
+      "felt":        { "role": "neutral", "displayName": "Felt", "canonical": "#0A1628", "tonalRamp": ["oklch(15% 0.040 258.3)", "oklch(26% 0.040 258.3)", "oklch(37% 0.040 258.3)", "oklch(48% 0.040 258.3)", "oklch(60% 0.040 258.3)", "oklch(71% 0.040 258.3)", "oklch(83% 0.040 258.3)", "oklch(95% 0.040 258.3)"] },
+      "felt-glow":   { "role": "neutral", "displayName": "Felt Glow", "canonical": "#13294B", "tonalRamp": ["oklch(15% 0.069 258.9)", "oklch(26% 0.069 258.9)", "oklch(37% 0.069 258.9)", "oklch(48% 0.069 258.9)", "oklch(60% 0.069 258.9)", "oklch(71% 0.069 258.9)", "oklch(83% 0.069 258.9)", "oklch(95% 0.069 258.9)"] },
+      "deep":        { "role": "neutral", "displayName": "Deep Table", "canonical": "#060E1B", "tonalRamp": ["oklch(15% 0.031 258.4)", "oklch(26% 0.031 258.4)", "oklch(37% 0.031 258.4)", "oklch(48% 0.031 258.4)", "oklch(60% 0.031 258.4)", "oklch(71% 0.031 258.4)", "oklch(83% 0.031 258.4)", "oklch(95% 0.031 258.4)"] },
+      "band":        { "role": "neutral", "displayName": "Closing Band", "canonical": "#0D1C33", "tonalRamp": ["oklch(15% 0.050 258.7)", "oklch(26% 0.050 258.7)", "oklch(37% 0.050 258.7)", "oklch(48% 0.050 258.7)", "oklch(60% 0.050 258.7)", "oklch(71% 0.050 258.7)", "oklch(83% 0.050 258.7)", "oklch(95% 0.050 258.7)"] },
+      "face":        { "role": "neutral", "displayName": "Card Face", "canonical": "#12284A", "tonalRamp": ["oklch(15% 0.069 258.9)", "oklch(26% 0.069 258.9)", "oklch(37% 0.069 258.9)", "oklch(48% 0.069 258.9)", "oklch(60% 0.069 258.9)", "oklch(71% 0.069 258.9)", "oklch(83% 0.069 258.9)", "oklch(95% 0.069 258.9)"] },
+      "navy":        { "role": "neutral", "displayName": "Logo Navy", "canonical": "#1B355E", "tonalRamp": ["oklch(15% 0.080 259.2)", "oklch(26% 0.080 259.2)", "oklch(37% 0.080 259.2)", "oklch(48% 0.080 259.2)", "oklch(60% 0.080 259.2)", "oklch(71% 0.080 259.2)", "oklch(83% 0.080 259.2)", "oklch(95% 0.080 259.2)"] },
+      "white":       { "role": "neutral", "displayName": "Heading White", "canonical": "#F2F5F9", "tonalRamp": ["oklch(15% 0.006 255.5)", "oklch(26% 0.006 255.5)", "oklch(37% 0.006 255.5)", "oklch(48% 0.006 255.5)", "oklch(60% 0.006 255.5)", "oklch(71% 0.006 255.5)", "oklch(83% 0.006 255.5)", "oklch(95% 0.006 255.5)"] },
+      "text":        { "role": "neutral", "displayName": "Body Slate", "canonical": "#A9B8CB", "tonalRamp": ["oklch(15% 0.032 254.4)", "oklch(26% 0.032 254.4)", "oklch(37% 0.032 254.4)", "oklch(48% 0.032 254.4)", "oklch(60% 0.032 254.4)", "oklch(71% 0.032 254.4)", "oklch(83% 0.032 254.4)", "oklch(95% 0.032 254.4)"] },
+      "rule":        { "role": "neutral", "displayName": "Hairline", "canonical": "rgba(205, 213, 224, .18)", "tonalRamp": ["rgba(205, 213, 224, .06)", "rgba(205, 213, 224, .10)", "rgba(205, 213, 224, .14)", "rgba(205, 213, 224, .18)", "rgba(205, 213, 224, .26)", "rgba(205, 213, 224, .34)", "rgba(205, 213, 224, .42)", "rgba(205, 213, 224, .50)"] },
+      "rule-strong": { "role": "neutral", "displayName": "Strong Hairline", "canonical": "rgba(205, 213, 224, .42)", "tonalRamp": ["rgba(205, 213, 224, .18)", "rgba(205, 213, 224, .24)", "rgba(205, 213, 224, .30)", "rgba(205, 213, 224, .36)", "rgba(205, 213, 224, .42)", "rgba(205, 213, 224, .50)", "rgba(205, 213, 224, .58)", "rgba(205, 213, 224, .66)"] },
+      "danger":      { "role": "state", "displayName": "Error Rose", "canonical": "#F2A5A5", "tonalRamp": ["oklch(15% 0.092 19.3)", "oklch(26% 0.092 19.3)", "oklch(37% 0.092 19.3)", "oklch(48% 0.092 19.3)", "oklch(60% 0.092 19.3)", "oklch(71% 0.092 19.3)", "oklch(83% 0.092 19.3)", "oklch(95% 0.092 19.3)"] }
+    },
+    "typographyMeta": {
+      "display":      { "displayName": "Display", "purpose": "Sub-page H1 (Services, Request a Quote)." },
+      "display-hero": { "displayName": "Display Hero", "purpose": "Home H1, sized so the dealt hand fits in the first viewport." },
+      "headline":     { "displayName": "Headline", "purpose": "Section H2s in content bands." },
+      "title":        { "displayName": "Title", "purpose": "Face-card titles; steps down for side cards and steps." },
+      "rank":         { "displayName": "Rank", "purpose": "Giant silver service rank (A or K) on panels, with a spade pip below." },
+      "wordmark":     { "displayName": "Wordmark", "purpose": "SPADES SOLUTIONS in header and footer; the only tracked uppercase." },
+      "body":         { "displayName": "Body", "purpose": "All running copy." },
+      "body-lede":    { "displayName": "Lede", "purpose": "Section and page ledes, max 46ch." },
+      "label":        { "displayName": "Label", "purpose": "Form labels, footer column headings, list column headings." },
+      "button":       { "displayName": "Button", "purpose": "Buttons and see-details text links." }
+    },
+    "shadows": [
+      { "name": "dealt-card", "value": "0 2px 4px rgba(0, 0, 0, .3), 0 40px 80px -30px rgba(0, 0, 0, .8)", "purpose": "The three cards in the hero hand only." },
+      { "name": "field-focus", "value": "0 0 0 3px rgba(205, 213, 224, .25)", "purpose": "Input keyboard focus, with the border shifting to Card Silver." },
+      { "name": "header-stuck", "value": "background: rgba(10, 22, 40, .94); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(205, 213, 224, .18)", "purpose": "Sticky header once the page scrolls past 8px, and while the mobile menu is open." }
+    ],
+    "motion": [
+      { "name": "ease", "value": "cubic-bezier(.16, 1, .3, 1)", "purpose": "The single easing curve: deals, card lifts, button press, link arrow." },
+      { "name": "deal", "value": "1.1s var(--ease) .15s backwards", "purpose": "Face cards slide out from behind the card back on load (desktop)." },
+      { "name": "deal-compact", "value": ".9s var(--ease), delays .1s and .22s", "purpose": "Below 1080px the faces deal down out of the small card back." },
+      { "name": "card-lift", "value": "transform .55s var(--ease)", "purpose": "Hover or focus lifts one card at a time." },
+      { "name": "control", "value": ".2s", "purpose": "Button and field colour and border transitions; press scales to .97." },
+      { "name": "arrow-nudge", "value": "transform .3s var(--ease), translateX(4px)", "purpose": "See-details arrow on hover." },
+      { "name": "reduced-motion", "value": "animation: none; transition-duration: .01ms", "purpose": "prefers-reduced-motion shows the hand static and cuts transitions." }
+    ],
+    "breakpoints": [
+      { "name": "hand-compact", "value": "1080px" },
+      { "name": "single-column", "value": "960px" },
+      { "name": "mobile-nav", "value": "760px" },
+      { "name": "narrow", "value": "480px" },
+      { "name": "tiny", "value": "360px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Solid Button",
+      "kind": "button",
+      "refersTo": "button-solid",
+      "description": "Primary quote action: silver pill, felt text.",
+      "html": "<a class=\"ds-btn ds-btn--solid\" href=\"#\">Get a Quote</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: .6rem; min-height: 48px; padding: .8rem 1.45rem; border-radius: 999px; font: 600 1rem/1 var(--sans, Figtree, system-ui, sans-serif); text-decoration: none; cursor: pointer; border: 1px solid var(--silver, #CDD5E0); transition: background-color .2s, color .2s, border-color .2s, transform .2s cubic-bezier(.16, 1, .3, 1); } .ds-btn--solid { background: var(--silver, #CDD5E0); color: var(--felt, #0A1628); } .ds-btn--solid:hover { background: var(--white, #F2F5F9); border-color: var(--white, #F2F5F9); } .ds-btn:active { transform: scale(.97); } .ds-btn:focus-visible { outline: 2px solid var(--silver, #CDD5E0); outline-offset: 3px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action (WhatsApp): outline pill with a leading line icon.",
+      "html": "<a class=\"ds-btn-ghost\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.6-5.5A8.5 8.5 0 1 1 21 11.5Z\"/></svg>Chat on WhatsApp</a>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; justify-content: center; gap: .6rem; min-height: 48px; padding: .8rem 1.45rem; border-radius: 999px; font: 600 1rem/1 var(--sans, Figtree, system-ui, sans-serif); text-decoration: none; color: var(--white, #F2F5F9); background: transparent; border: 1px solid var(--rule-strong, rgba(205, 213, 224, .42)); transition: background-color .2s, border-color .2s, transform .2s cubic-bezier(.16, 1, .3, 1); } .ds-btn-ghost svg { width: 18px; height: 18px; flex: none; } .ds-btn-ghost:hover { border-color: var(--silver, #CDD5E0); background: rgba(205, 213, 224, .08); } .ds-btn-ghost:active { transform: scale(.97); } .ds-btn-ghost:focus-visible { outline: 2px solid var(--silver, #CDD5E0); outline-offset: 3px; }"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Spade + wordmark, silver links, current page white and underlined, quote pill last.",
+      "html": "<nav class=\"ds-nav\"><span class=\"ds-nav-brand\"><svg viewBox=\"0 0 24 26\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M12 1C9 6 2 9 2 15a5 5 0 0 0 8.4 3.7L9 25h6l-1.4-6.3A5 5 0 0 0 22 15c0-6-7-9-10-14Z\"/></svg>SPADES SOLUTIONS</span><span class=\"ds-nav-links\"><a href=\"#\" aria-current=\"page\">Home</a><a href=\"#\">Services</a><a href=\"#\">Contact</a><a class=\"ds-nav-cta\" href=\"#\">Get a Quote</a></span></nav>",
+      "css": ".ds-nav { display: flex; align-items: center; justify-content: space-between; gap: 1rem; height: 64px; padding: 0 1.25rem; background: var(--felt, #0A1628); } .ds-nav-brand { display: flex; align-items: center; gap: .85rem; color: var(--white, #F2F5F9); font: 400 1.1rem/1 var(--serif, Marcellus, Georgia, serif); letter-spacing: .14em; white-space: nowrap; } .ds-nav-brand svg { width: 26px; height: 28px; } .ds-nav-links { display: flex; align-items: center; gap: 1.75rem; } .ds-nav-links a:not(.ds-nav-cta) { color: var(--silver, #CDD5E0); font: 500 .9375rem/1.65 var(--sans, Figtree, system-ui, sans-serif); text-decoration: none; text-underline-offset: .22em; } .ds-nav-links a:not(.ds-nav-cta):hover { color: var(--white, #F2F5F9); text-decoration: underline; } .ds-nav-links a[aria-current=\"page\"] { color: var(--white, #F2F5F9); text-decoration: underline; text-decoration-thickness: 1px; } .ds-nav-links a:focus-visible { outline: 2px solid var(--silver, #CDD5E0); outline-offset: 3px; border-radius: 6px; } .ds-nav-cta { display: inline-flex; align-items: center; min-height: 40px; padding: .6rem 1.15rem; border-radius: 999px; background: var(--silver, #CDD5E0); color: var(--felt, #0A1628); border: 1px solid var(--silver, #CDD5E0); font: 600 .9375rem/1 var(--sans, Figtree, system-ui, sans-serif); text-decoration: none; transition: background-color .2s, border-color .2s; } .ds-nav-cta:hover { background: var(--white, #F2F5F9); border-color: var(--white, #F2F5F9); }"
+    },
+    {
+      "name": "Face Card",
+      "kind": "card",
+      "refersTo": "card-face",
+      "description": "Signature: a service dealt as a playing card with mirrored corner indices, double ring, inclusions and its own quote button.",
+      "html": "<article class=\"ds-card\"><span class=\"ds-idx\"><b>A</b><svg viewBox=\"0 0 24 26\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M12 1C9 6 2 9 2 15a5 5 0 0 0 8.4 3.7L9 25h6l-1.4-6.3A5 5 0 0 0 22 15c0-6-7-9-10-14Z\"/></svg></span><span class=\"ds-idx ds-idx--end\"><b>A</b><svg viewBox=\"0 0 24 26\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M12 1C9 6 2 9 2 15a5 5 0 0 0 8.4 3.7L9 25h6l-1.4-6.3A5 5 0 0 0 22 15c0-6-7-9-10-14Z\"/></svg></span><h2>Apparel &amp; Printing</h2><p>T-shirts, uniforms, kits and merchandise.</p><ul><li>Bulk printing</li><li>Embroidery</li><li>Branded merchandise</li><li>Design support</li></ul><a class=\"ds-card-btn\" href=\"#\">Get an Apparel Quote</a></article>",
+      "css": ".ds-card { position: relative; width: 360px; max-width: 100%; min-height: 440px; display: flex; flex-direction: column; padding: 5.5rem 2.25rem 2rem; border-radius: 16px; background: var(--face, #12284A); color: var(--text, #A9B8CB); font: 400 1rem/1.65 var(--sans, Figtree, system-ui, sans-serif); box-shadow: 0 2px 4px rgba(0, 0, 0, .3), 0 40px 80px -30px rgba(0, 0, 0, .8); transform: rotate(-3deg); transition: transform .55s cubic-bezier(.16, 1, .3, 1); } .ds-card:hover, .ds-card:focus-within { transform: translateY(-14px) rotate(-1deg); } .ds-card::before, .ds-card::after { content: \"\"; position: absolute; pointer-events: none; } .ds-card::before { inset: 10px; border: 1px solid rgba(205, 213, 224, .42); border-radius: 10px; } .ds-card::after { inset: 14px; border: 1px solid rgba(205, 213, 224, .18); border-radius: 7px; } .ds-idx { position: absolute; top: 1.5rem; left: 1.6rem; display: grid; justify-items: center; gap: .3rem; color: var(--silver, #CDD5E0); line-height: 1; } .ds-idx b { font: 400 2.1rem/1 var(--serif, Marcellus, Georgia, serif); } .ds-idx svg { width: 1.2rem; height: 1.27rem; } .ds-idx--end { top: auto; left: auto; bottom: 1.5rem; right: 1.6rem; transform: rotate(180deg); } .ds-card h2 { margin: 0; color: var(--white, #F2F5F9); font: 400 2.25rem/1.05 var(--serif, Marcellus, Georgia, serif); letter-spacing: -.01em; } .ds-card p { margin: .85rem 0 0; } .ds-card ul { list-style: none; padding: 0; margin: 1.25rem 0 1.75rem; } .ds-card li { padding: .62rem 0; border-bottom: 1px solid rgba(205, 213, 224, .18); color: var(--white, #F2F5F9); font-weight: 500; } .ds-card-btn { position: relative; z-index: 1; margin-top: auto; align-self: flex-start; display: inline-flex; align-items: center; min-height: 48px; padding: .8rem 1.45rem; border-radius: 999px; background: var(--silver, #CDD5E0); color: var(--felt, #0A1628); border: 1px solid var(--silver, #CDD5E0); font: 600 1rem/1 var(--sans, Figtree, system-ui, sans-serif); text-decoration: none; transition: background-color .2s; } .ds-card-btn:hover { background: var(--white, #F2F5F9); } .ds-card-btn:focus-visible { outline: 2px solid var(--silver, #CDD5E0); outline-offset: 3px; }"
+    },
+    {
+      "name": "Service Panel",
+      "kind": "card",
+      "refersTo": "service-panel",
+      "description": "Flat navy-gradient panel with edge-mounted double ring, giant silver rank plus spade, heading, lede and fact chips.",
+      "html": "<div class=\"ds-panel\"><span class=\"ds-rank\">K<svg viewBox=\"0 0 24 26\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M12 1C9 6 2 9 2 15a5 5 0 0 0 8.4 3.7L9 25h6l-1.4-6.3A5 5 0 0 0 22 15c0-6-7-9-10-14Z\"/></svg></span><div><h2>Event Logistics</h2><p>Equipment in before doors open, a technician running it all day, everything cleared after.</p><ul class=\"ds-facts\"><li>Colombo &amp; surrounds</li><li>Free quote</li></ul></div></div>",
+      "css": ".ds-panel { position: relative; display: grid; grid-template-columns: auto 1fr; gap: 0 1.75rem; padding: clamp(2rem, 5vw, 4rem); border-radius: 16px; background: linear-gradient(180deg, rgba(27, 53, 94, .45), rgba(27, 53, 94, .2)), var(--felt, #0A1628); color: var(--text, #A9B8CB); font: 400 1.125rem/1.65 var(--sans, Figtree, system-ui, sans-serif); } .ds-panel::before, .ds-panel::after { content: \"\"; position: absolute; pointer-events: none; } .ds-panel::before { inset: 0; border: 1px solid rgba(205, 213, 224, .42); border-radius: 16px; } .ds-panel::after { inset: 6px; border: 1px solid rgba(205, 213, 224, .18); border-radius: 11px; } .ds-rank { display: grid; justify-items: center; align-content: start; gap: .14em; color: var(--silver, #CDD5E0); font: 400 clamp(5rem, 9vw, 7.5rem)/.82 var(--serif, Marcellus, Georgia, serif); } .ds-rank svg { width: .26em; height: .28em; } .ds-panel h2 { margin: 0; color: var(--white, #F2F5F9); font: 400 clamp(2rem, 3.4vw, 2.9rem)/1.05 var(--serif, Marcellus, Georgia, serif); letter-spacing: -.01em; } .ds-panel p { margin: .9rem 0 0; max-width: 46ch; } .ds-facts { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1.5rem 0 0; padding: 0; list-style: none; } .ds-facts li { font-size: .9375rem; color: var(--white, #F2F5F9); padding: .4rem .85rem; border: 1px solid rgba(205, 213, 224, .42); border-radius: 999px; }"
+    },
+    {
+      "name": "Fact Chip",
+      "kind": "chip",
+      "refersTo": "fact-chip",
+      "description": "Informational outline pill for service facts; never interactive.",
+      "html": "<ul class=\"ds-chips\"><li>From 1 piece</li><li>About 1&ndash;2 weeks</li><li>Free quote</li></ul>",
+      "css": ".ds-chips { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0; padding: 0; list-style: none; } .ds-chips li { font: 400 .9375rem/1.65 var(--sans, Figtree, system-ui, sans-serif); color: var(--white, #F2F5F9); padding: .4rem .85rem; border: 1px solid var(--rule-strong, rgba(205, 213, 224, .42)); border-radius: 999px; }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Felt-filled field with strong hairline border, silver focus glow, rose error state.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-name\">Name</label><input id=\"ds-name\" type=\"text\" placeholder=\"Jane Perera\" /></div><div class=\"ds-field ds-field--invalid\"><label for=\"ds-email\">Email</label><input id=\"ds-email\" type=\"email\" aria-invalid=\"true\" /><span class=\"ds-err\">Enter an email address like you@example.com.</span></div>",
+      "css": ".ds-field { display: grid; gap: .45rem; margin-bottom: 1.25rem; } .ds-field label { color: var(--white, #F2F5F9); font: 600 .9375rem/1.4 var(--sans, Figtree, system-ui, sans-serif); } .ds-field input { width: 100%; min-height: 48px; padding: .75rem .95rem; border-radius: 10px; border: 1px solid var(--rule-strong, rgba(205, 213, 224, .42)); background: var(--felt, #0A1628); color: var(--white, #F2F5F9); font: 400 1rem/1.4 var(--sans, Figtree, system-ui, sans-serif); transition: border-color .2s, box-shadow .2s; } .ds-field input:hover { border-color: var(--silver, #CDD5E0); } .ds-field input:focus-visible { outline: none; border-color: var(--silver, #CDD5E0); box-shadow: 0 0 0 3px rgba(205, 213, 224, .25); } .ds-field--invalid input { border-color: var(--danger, #F2A5A5); } .ds-err { color: var(--danger, #F2A5A5); font: 400 .9375rem/1.4 var(--sans, Figtree, system-ui, sans-serif); }"
+    },
+    {
+      "name": "Booking Steps",
+      "kind": "custom",
+      "refersTo": "booking-steps",
+      "description": "Signature: ordered steps counted like a deck (A, 2, 3, 4) in silver Marcellus, divided by hairlines.",
+      "html": "<ol class=\"ds-steps\"><li><b>A</b><h3>Send the Brief</h3><p>Date, venue, quantities or a rough idea.</p></li><li><b>2</b><h3>Get a Free Quote</h3><p>A price and a plan within one working day.</p></li><li><b>3</b><h3>Approve &amp; Prep</h3><p>Sign off the artwork, or lock in the crew.</p></li><li><b>4</b><h3>Ready by Your Date</h3><p>Shirts in hand, or the stage live.</p></li></ol>",
+      "css": ".ds-steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid rgba(205, 213, 224, .42); color: var(--text, #A9B8CB); font: 400 1rem/1.65 var(--sans, Figtree, system-ui, sans-serif); } .ds-steps li { padding: 2rem 2rem 0 0; } .ds-steps li + li { padding-left: 2rem; border-left: 1px solid rgba(205, 213, 224, .18); } .ds-steps b { display: block; font: 400 3.5rem/1 var(--serif, Marcellus, Georgia, serif); color: var(--silver, #CDD5E0); } .ds-steps h3 { margin: 1.25rem 0 0; color: var(--white, #F2F5F9); font: 400 1.5rem/1.05 var(--serif, Marcellus, Georgia, serif); letter-spacing: -.01em; } .ds-steps p { margin: .5rem 0 0; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Card Face",
+    "overview": "The logo is a spade, so the site is a card table. Each of the two services is dealt as its own playing card: a navy face with a corner index (rank plus the logo's spade pip, mirrored at the opposite corner), a short list of what it covers, and its own quote button printed on the card. The page is the felt: a deep navy-black table lit by a soft overhead glow. Everything sits in one hue family (blue at about 258°), and silver is the only ink that is not navy or white.\n\nThe mood is dark, premium and quiet. Density is low: generous section bands, hairline rules between rows, centred hero, left-aligned everything else. Ornament comes from the brand itself rather than from decoration: the badge logo's double ring becomes a two-hairline inner frame on every card and panel, the spade silhouette becomes the card bullet and pip, and the Roman-capital wordmark sets the heading face. The one moment of motion is the deal: on load the two face cards slide out from behind the card back into a fanned hand.\n\nThe world refuses the category default of a dark concert photo hero over a row of icon cards. There is no photography, no icon grid and no third accent hue.",
+    "keyCharacteristics": [
+      "One hue family: navy-black felt, navy faces, silver ink, near-white headings.",
+      "The badge's double ring as a two-hairline inner frame on every framed surface.",
+      "Card grammar: rank letters (A for Apparel, K for Event Logistics) with the spade pip, mirrored corner indices.",
+      "Marcellus Roman capitals for headings, ranks and the wordmark; Figtree for everything you read.",
+      "Pill-shaped controls; 16px card corners; hairline rows instead of boxes.",
+      "Depth only where a card is physically dealt; everything else lies flat on the table."
+    ],
+    "rules": [
+      { "name": "The Two-Inks Rule", "body": "On the felt there are only two inks: Card Silver for accents and Heading White for headings. Body copy is Body Slate. There is no third hue; Error Rose exists only to mark a broken field.", "section": "colors" },
+      { "name": "The Silver-Is-Ink Rule", "body": "Silver is never a panel or band fill. Its largest area is a pill button.", "section": "colors" },
+      { "name": "The Engraved-Capitals Rule", "body": "Marcellus carries every heading, rank and numeral at weight 400. Hierarchy comes from size, never from bolding the serif.", "section": "typography" },
+      { "name": "The Wordmark-Only Tracking Rule", "body": "Tracked uppercase belongs to the wordmark alone. No other text is set in spaced capitals; headings and button labels are Title Case.", "section": "typography" },
+      { "name": "The Rank-Count Rule", "body": "Ordered sequences count like a deck: A, 2, 3, 4. Step and next-step numerals are Marcellus in Card Silver, and the first is always the Ace.", "section": "typography" },
+      { "name": "The Only-Dealt-Cards-Lift Rule", "body": "A surface casts a shadow only if it is a playing card in the hand. Panels, the form card and side cards lie flat and rely on tone and the double ring.", "section": "elevation" },
+      { "name": "The Deal Rule", "body": "Motion belongs to the hand. On load the face cards deal out from behind the card back (1.1s on the ease-out curve, 0.15s delay; 0.9s with staggered 0.1s and 0.22s delays below 1080px). Hover or focus lifts one card at a time (it straightens toward 3° and rises 14px, 0.55s) and stays tucked behind the card back; the centre card always sits on top. Reduced motion shows the hand static and cuts all transitions.", "section": "elevation" },
+      { "name": "The Double Ring Rule", "body": "Every framed surface carries two hairlines, outer strong and inner soft. A single border or a heavy frame is not part of this world.", "section": "shapes" }
+    ],
+    "dos": [
+      "Do deal each service as its own card or panel with its own quote button; the two services never share a surface.",
+      "Do keep Apparel as A and Event Logistics as K wherever a rank appears.",
+      "Do frame every card and panel with the double ring: outer Strong Hairline, inner Hairline.",
+      "Do use the spade pip (the logo silhouette, coloured by currentColor) as the only card-list bullet and the only ornament; line icons appear only beside contact details and on WhatsApp buttons.",
+      "Do count ordered sequences as A, 2, 3, 4 in silver Marcellus.",
+      "Do set headings, ranks and numerals in Marcellus 400 in Heading White or Card Silver, and running copy in Figtree on Body Slate.",
+      "Do use the solid silver pill for the primary quote action and the ghost pill for the secondary WhatsApp action.",
+      "Do keep every control at least 48px tall and give keyboard focus the 2px silver outline.",
+      "Do honour reduced motion: the hand shows static, transitions cut."
+    ],
+    "donts": [
+      "Don't open a page with a dark event photo hero over a row of icon cards.",
+      "Don't introduce a third hue; Error Rose is for broken form fields only.",
+      "Don't fill a panel or band with silver.",
+      "Don't put shadows on panels, form cards or side cards; only dealt cards lift.",
+      "Don't set tracked uppercase text anywhere except the wordmark.",
+      "Don't bold Marcellus or swap it for another display face.",
+      "Don't rotate or fan cards outside the hero hand.",
+      "Don't replace hairline rows with boxed tiles."
+    ]
+  }
+}

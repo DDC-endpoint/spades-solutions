@@ -1,2 +1,8 @@
 node_modules/
 _tools/
+
+# Design exploration and review captures (not part of the site)
+mocks/
+.impeccable/mocks/
+.impeccable/review/
+.impeccable/questions/

@@ -1,8 +1,8 @@
 {
   "name": "spades-solutions",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
-  "description": "Static marketing website for Spades Solutions (custom apparel, printing & logistics).",
+  "description": "Static marketing website for Spades Solutions: custom apparel & printing, and event logistics.",
   "scripts": {
     "dev": "npx --yes serve . -l 3002",
     "start": "npx --yes serve . -l 3002"
