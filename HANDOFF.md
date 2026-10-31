@@ -86,7 +86,7 @@ spades-solutions/
 - **Who it's for:** two lists, one per service (apparel: class & club T-shirts, staff uniforms, team kits, event merchandise; events: concerts & festivals, corporate events, weddings & parties, school functions).
 - **Service facts:** two compact framed panels side by side (rank, one-line description, fact chips, link to details).
 - **How a Booking Works:** 4 steps.
-- **Closing band:** free quote + WhatsApp, then footer with DDC Web Solutions credit.
+- **Closing band:** free quote + WhatsApp, then footer with DDC Web Services credit.
 
 ### Services (`services.html`)
 - One framed panel per service (`#apparel`, `#events`): description, "Good for" list, fact chips (minimum order, turnaround, free quote / service area, free quote), quote button, and a detailed list of what's included.

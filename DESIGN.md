@@ -213,13 +213,13 @@ A single cool navy hue stepped from table to card to logo, with silver as the on
 
 ## Layout
 
-A single centred container (`container` wide, `gutter` on each side). The header is sticky at 80px high, transparent at rest and turning to 94% Felt with a 10px backdrop blur and a hairline once the page scrolls.
+A single centred container (`container` wide, `gutter` on each side). The header is sticky at 64px high, transparent at rest and turning to 94% Felt with a 10px backdrop blur and a hairline once the page scrolls.
 
 Pages are a stack of full-width bands separated by a hairline top border, each with `section` vertical padding; the closing band is taller (`section-close`) and filled with Closing Band. The home hero is centred; all other content is left-aligned. Content bands use a two-column split (1fr / 1.25fr, gaps 3rem by 5rem) or a two-up pair of panels (1.5rem gap). The booking steps run as a four-column row under a strong hairline, with hairline column dividers. The contact page is form plus aside (1.5fr / 1fr).
 
 Inside cards and panels, lists are rows divided by hairlines (about 1.05rem vertical padding), not boxes or tiles.
 
-Responsive: at 1080px the hand re-deals as a small 132px card back (5:7, tilted -4°) centred above two face cards side by side. At 960px every split, pair, panel and contact grid collapses to one column and the steps go two-up. At 760px the nav becomes a full-width drop-down under the header behind a 48px round menu button, the hand and the form fields go single-column. At 480px the steps stack and the panel rank sits above its heading. At 360px the header wordmark text hides, leaving the spade.
+Responsive: at 1080px the hand re-deals as a small 132px card back (5:7, tilted -4°) centred above two face cards side by side. At 960px every split, pair, panel and contact grid collapses to one column and the steps go two-up. At 760px the nav becomes a full-width drop-down under the header behind a 44px round menu button, the hand and the form fields go single-column. At 480px the steps stack and the panel rank sits above its heading. At 360px the header wordmark text hides, leaving the spade.
 
 Every interactive target is at least 48px tall (`touch`).
 
@@ -234,7 +234,7 @@ Mostly flat. Depth is tonal (Felt to Card Face to Logo Navy, each a lighter step
 ### Named Rules
 **The Only-Dealt-Cards-Lift Rule.** A surface casts a shadow only if it is a playing card in the hand. Panels, the form card and side cards lie flat and rely on tone and the double ring.
 
-**The Deal Rule.** Motion belongs to the hand. On load the face cards deal out from behind the card back (1.1s on the ease-out curve, 0.15s delay; 0.9s with staggered 0.1s and 0.22s delays below 1080px). Hover or focus lifts one card at a time (it straightens toward 3° and rises 14px, 0.55s). Reduced motion shows the hand static and cuts all transitions.
+**The Deal Rule.** Motion belongs to the hand. The face cards pivot from their bottom inner corners like a held hand. On load they deal out from behind the card back (1.1s on the ease-out curve, 0.15s delay; 0.9s with staggered 0.1s and 0.22s delays below 1080px). Hover or focus lifts one card at a time (it straightens toward 3° and rises 14px, 0.55s) and stays tucked behind the card back; the centre card always sits on top. Reduced motion shows the hand static and cuts all transitions.
 
 ## Shapes
 
@@ -273,7 +273,7 @@ Smooth silver pills; confident but small.
 - **Error:** border and message in Error Rose; messages appear under the field on blur or submit, and a status line under the form summarises.
 
 ### Navigation
-- **Style:** spade mark (34px) plus the Marcellus wordmark on the left; Figtree 500 links in Card Silver on the right, then the solid Get a Quote pill. Hover and current page turn Heading White and underline (1px for current).
+- **Style:** spade mark (28px) plus the Marcellus wordmark (1.1rem) on the left; Figtree 500 links (0.9375rem) in Card Silver on the right, then a compact solid Get a Quote pill (40px high; full 48px inside the mobile menu). Hover and current page turn Heading White and underline (1px for current).
 - **Mobile:** below 760px a 48px round outline menu button toggles a full-width Felt drop-down; links become 1.125rem rows divided by hairlines with the quote pill below. Escape closes it.
 
 ### Corner Index (signature)
