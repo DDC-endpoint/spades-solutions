@@ -1,186 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact & Quote — Spades Solutions</title>
-  <meta name="description" content="Request a quote for custom apparel, printing, embroidery, or delivery. Fill the form or message us on WhatsApp." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/styles.css?v=2" />
+  <title>Request a Quote | Spades Solutions</title>
+  <meta name="description" content="Request a free quote for custom apparel or event logistics in Colombo and surrounds. Reply within one working day, or message on WhatsApp." />
+  <meta name="theme-color" content="#0A1628" />
+  <link rel="icon" type="image/png" href="assets/favicon-64.png" />
+  <link rel="preload" href="assets/fonts/marcellus-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/figtree-latin-var.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="assets/css/styles.css?v=4" />
 </head>
 <body>
-  <!-- ========== HEADER ========== -->
+  <a class="skip" href="#main">Skip to Content</a>
+
   <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="index.html" aria-label="Spades Solutions home">
-        <img class="brand-logo" src="assets/logo-lockup.png" alt="Spades Solutions" />
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Spades Solutions, home">
+        <img src="assets/spade-white-96.png" alt="" width="96" height="102" />
+        <span aria-hidden="true">SPADES SOLUTIONS</span>
       </a>
-      <nav class="nav-links" aria-label="Primary">
-        <a class="link" href="index.html">Home</a>
-        <a class="link" href="services.html">Services</a>
-        <a class="link is-active" href="contact.html">Contact</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <svg class="i-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a class="btn btn--solid" href="contact.html">Get a Quote</a>
       </nav>
-      <div class="nav-actions">
-        <a class="btn btn--primary btn-quote" href="#quote-form">Get a Quote</a>
-        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
-      </div>
     </div>
   </header>
 
-  <main>
-    <section class="section section--tight">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">Get in touch</span>
-          <h1 class="title" style="font-family:var(--font-display);font-size:var(--step-4)">Let's get your order <em style="color:var(--navy);font-style:italic">started.</em></h1>
-          <p class="lede">Send us the details and we'll reply with options and a quote — usually within one business day. Prefer to chat? Message us on WhatsApp.</p>
-        </div>
-
-        <div class="contact-grid">
-          <!-- FORM -->
-          <form class="form-card reveal" id="quote-form" novalidate>
-            <div class="field-row">
-              <div class="field">
-                <label for="name">Full name <span class="req">*</span></label>
-                <input id="name" name="name" type="text" autocomplete="name" placeholder="Jane Perera" data-required />
-                <span class="err">Please enter your name.</span>
-              </div>
-              <div class="field">
-                <label for="email">Email <span class="req">*</span></label>
-                <input id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com" data-required />
-                <span class="err">Please enter a valid email.</span>
-              </div>
-            </div>
-
-            <div class="field-row">
-              <div class="field">
-                <label for="phone">Phone / WhatsApp</label>
-                <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+94 7X XXX XXXX" />
-              </div>
-              <div class="field">
-                <label for="company">Company / organisation</label>
-                <input id="company" name="company" type="text" autocomplete="organization" placeholder="Optional" />
-              </div>
-            </div>
-
-            <div class="field-row">
-              <div class="field">
-                <label for="service">Service needed <span class="req">*</span></label>
-                <select id="service" name="service" data-required>
-                  <option value="">Select a service…</option>
-                  <option>Bulk / Mass Printing</option>
-                  <option>Embroidery</option>
-                  <option>Branded Merchandise (full kit)</option>
-                  <option>Sounds &amp; Lights (Event AV)</option>
-                  <option>Printing + Event AV</option>
-                  <option>Not sure yet</option>
-                </select>
-                <span class="err">Please choose a service.</span>
-              </div>
-              <div class="field">
-                <label for="qty">Estimated quantity</label>
-                <select id="qty" name="qty">
-                  <option value="">Select…</option>
-                  <option>1 – 10</option>
-                  <option>11 – 50</option>
-                  <option>51 – 200</option>
-                  <option>201 – 500</option>
-                  <option>500+</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="field">
-              <label for="message">Tell us about your order <span class="req">*</span></label>
-              <textarea id="message" name="message" placeholder="Garment type, design, colours, deadline, delivery location…" data-required></textarea>
-              <span class="err">Please add a few details.</span>
-            </div>
-
-            <button class="btn btn--primary btn--lg" type="submit">
-              Request a quote
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </button>
-            <p class="form-status" role="status" aria-live="polite"></p>
-          </form>
-
-          <!-- SIDE PANEL -->
-          <aside class="contact-side">
-            <div class="info-card dark reveal" data-d="1">
-              <h3>Chat on WhatsApp</h3>
-              <p>The fastest way to get a quick answer or send a reference image.</p>
-              <!-- TODO: replace 940000000000 with the real WhatsApp number (country code, no +) -->
-              <a class="btn btn--wa btn--lg" style="margin-top:1rem;width:100%;justify-content:center" href="https://wa.me/940000000000?text=Hi%20Spades%20Solutions%2C%20I%27d%20like%20a%20quote" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.16c-.24.68-1.42 1.32-1.95 1.36-.5.04-.97.22-3.27-.68-2.77-1.09-4.5-3.95-4.64-4.13-.13-.18-1.1-1.47-1.1-2.8 0-1.32.7-1.97.94-2.24.24-.27.53-.34.71-.34.18 0 .36 0 .51.01.16.01.39-.06.6.46.24.57.81 1.97.88 2.11.07.14.12.31.02.49-.09.18-.14.29-.27.45-.14.16-.29.36-.41.48-.14.14-.28.29-.12.56.16.27.71 1.17 1.53 1.9 1.05.93 1.94 1.22 2.21 1.36.27.14.43.12.59-.07.16-.18.68-.79.86-1.07.18-.27.36-.22.6-.13.24.09 1.55.73 1.81.86.27.14.45.2.51.31.07.11.07.64-.17 1.32Z"/></svg>
-                Message us
-              </a>
-            </div>
-
-            <div class="info-card reveal" data-d="2">
-              <h3>Other ways to reach us</h3>
-              <div class="info-list">
-                <a href="https://www.instagram.com/spades_solutions_/" target="_blank" rel="noopener">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
-                  @spades_solutions_
-                </a>
-                <!-- TODO: add real email -->
-                <a href="mailto:hello@spadessolutions.com">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
-                  hello@spadessolutions.com
-                </a>
-                <span>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-                  Mon–Sat, 9:00 AM – 6:00 PM
-                </span>
-              </div>
-            </div>
-
-            <div class="info-card reveal" data-d="3">
-              <h3>Why Spades?</h3>
-              <div class="info-list">
-                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Any quantity — 1 or 1,000</span>
-                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Print, embroidery &amp; delivery in one place</span>
-                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Sample approval before production</span>
-              </div>
-            </div>
-          </aside>
-        </div>
+  <main id="main">
+    <section class="page-head" aria-labelledby="page-title">
+      <div class="wrap">
+        <h1 id="page-title">Request a Quote</h1>
+        <p class="lede-l">Tell us what you need and when. Quotes are free, and you&rsquo;ll get a reply within one working day.</p>
       </div>
     </section>
+
+    <div class="page-body">
+      <div class="wrap contact-grid">
+        <form class="form-card" id="quote-form" novalidate aria-label="Quote request">
+          <div class="fields">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Jane Perera" data-required aria-required="true" aria-describedby="name-err" />
+              <span class="err" id="name-err">Enter your name.</span>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" spellcheck="false" placeholder="you@example.com" data-required aria-required="true" aria-describedby="email-err" />
+              <span class="err" id="email-err">Enter an email address like you@example.com.</span>
+            </div>
+            <div class="field">
+              <label for="phone">Phone or WhatsApp <span class="opt">(optional)</span></label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+94 7X XXX XXXX" />
+            </div>
+            <div class="field">
+              <label for="org">School, company or group <span class="opt">(optional)</span></label>
+              <input id="org" name="organisation" type="text" autocomplete="organization" />
+            </div>
+            <div class="field">
+              <label for="service">Service</label>
+              <select id="service" name="service" data-required aria-required="true" aria-describedby="service-err">
+                <option value="">Choose a service…</option>
+                <option value="apparel">Apparel &amp; Printing</option>
+                <option value="events">Event Logistics</option>
+                <option value="both">Both</option>
+                <option value="unsure">Not sure yet</option>
+              </select>
+              <span class="err" id="service-err">Choose a service, or pick &ldquo;Not sure yet&rdquo;.</span>
+            </div>
+            <div class="field">
+              <label for="date">Date needed <span class="opt">(optional)</span></label>
+              <input id="date" name="date" type="date" autocomplete="off" />
+            </div>
+            <div class="field field--full">
+              <label for="message">Details</label>
+              <textarea id="message" name="message" autocomplete="off" placeholder="Venue, guest numbers, shirt quantities, colours, anything you already know…" data-required aria-required="true" aria-describedby="message-err"></textarea>
+              <span class="err" id="message-err">Add a few details so the quote is accurate.</span>
+            </div>
+          </div>
+          <div class="form-foot">
+            <button class="btn btn--solid" type="submit">Send Request</button>
+          </div>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <aside class="side" aria-label="Other ways to get in touch">
+          <div class="side-card side-card--solid">
+            <h2>Chat on WhatsApp</h2>
+            <p>Quicker for a short question, or to send a photo of a design you like.</p>
+            <!-- TODO(launch): replace 940000000000 with the real WhatsApp number (country code, no +) -->
+            <a class="btn btn--solid" href="https://wa.me/940000000000?text=Hi%20Spades%20Solutions%2C%20I%27d%20like%20a%20quote" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.6-5.5A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+              Open WhatsApp</a>
+          </div>
+
+          <div class="side-card">
+            <h2>Other Ways</h2>
+            <ul class="side-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
+                <a href="https://www.instagram.com/spades_solutions_/" target="_blank" rel="noopener">@spades_solutions_</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+                <!-- TODO(launch): replace with the real email address -->
+                <a href="mailto:hello@spadessolutions.com">hello@spadessolutions.com</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                <!-- TODO(launch): confirm business hours -->
+                <span>Mon&ndash;Sat, 9:00&nbsp;AM&ndash;6:00&nbsp;PM</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                <span>Colombo &amp; surrounds</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="side-card">
+            <h2>What Happens Next</h2>
+            <ol class="next">
+              <li><b aria-hidden="true">A</b><span>A reply, with any questions about your event or order.</span></li>
+              <li><b aria-hidden="true">2</b><span>A free quote with the price and plan.</span></li>
+              <li><b aria-hidden="true">3</b><span>You confirm, and the date is booked.</span></li>
+            </ol>
+          </div>
+        </aside>
+      </div>
+    </div>
   </main>
 
-  <!-- ========== FOOTER ========== -->
   <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
+    <div class="wrap">
+      <div class="foot">
         <div>
-          <a class="brand" href="index.html" aria-label="Spades Solutions home">
-            <img class="crest" src="assets/Spades_White.png" alt="" aria-hidden="true" />
-            <span class="wordmark"><b>SPADES</b><span>SOLUTIONS</span></span>
+          <a class="brand" href="index.html" aria-label="Spades Solutions, home">
+            <img src="assets/spade-white-96.png" alt="" width="96" height="102" />
+            <span aria-hidden="true">SPADES SOLUTIONS</span>
           </a>
-          <p>Custom apparel, printing, embroidery, and event sound &amp; lighting for businesses, teams, and individuals.</p>
+          <p>Custom apparel &amp; printing. Event logistics. Colombo &amp; surrounds.</p>
         </div>
-        <div class="footer-col">
-          <h5>Explore</h5>
-          <a href="index.html">Home</a>
-          <a href="services.html">Services</a>
-          <a href="contact.html">Contact</a>
+        <div>
+          <h2>Explore</h2>
+          <ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul>
         </div>
-        <div class="footer-col">
-          <h5>Get in touch</h5>
-          <a href="https://wa.me/940000000000" target="_blank" rel="noopener">WhatsApp</a>
-          <a href="https://www.instagram.com/spades_solutions_/" target="_blank" rel="noopener">Instagram</a>
-          <a href="contact.html">Request a quote</a>
+        <div>
+          <h2>Get in Touch</h2>
+          <ul>
+            <li><a href="https://wa.me/940000000000" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="https://www.instagram.com/spades_solutions_/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="contact.html">Request a Quote</a></li>
+          </ul>
         </div>
       </div>
-      <div class="footer-bottom">
-        <span>© <span data-year>2025</span> Spades Solutions. All rights reserved.</span>
+      <div class="legal">
+        <span>&copy; <span data-year>2026</span> Spades Solutions</span>
         <span>Designed &amp; built by <a href="https://damiandc.com/" target="_blank" rel="noopener">DDC Web Solutions</a></span>
       </div>
     </div>
   </footer>
 
-  <script src="assets/js/main.js?v=2"></script>
+  <script src="assets/js/main.js?v=4"></script>
 </body>
 </html>
