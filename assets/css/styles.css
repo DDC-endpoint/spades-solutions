@@ -306,7 +306,33 @@ section { scroll-margin-top: 80px; }
 .legal a { color: var(--white); }
 
 /* ---------- Responsive ---------- */
-@media (max-width: 1080px) {
+/* Tablets / small laptops: keep the desktop fan. Side padding holds the
+   rotated outer cards (they spill ~55px past their columns) inside the page. */
+@media (min-width: 761px) and (max-width: 1240px) {
+  .hand { padding-inline: 3.5rem; }
+}
+@media (min-width: 761px) and (max-width: 960px) {
+  .hand { grid-template-columns: 1fr .8fr 1fr; padding-inline: 2.75rem; }
+  .card { padding: 5rem 1.35rem 1.5rem; min-height: 400px; }
+  .card::before { inset: 8px; }
+  .card::after { inset: 11px; }
+  .card h2 { font-size: 1.6rem; }
+  .card > p, .card li { font-size: .875rem; }
+  .card ul { margin: 1rem 0 1.25rem; }
+  .card li { gap: .5rem; padding: .5rem 0; }
+  .card .btn { min-height: 40px; padding: .6rem 1rem; font-size: .875rem; }
+  .idx { top: 1.15rem; left: 1.2rem; }
+  .idx--end { top: auto; left: auto; bottom: 1.15rem; right: 1.2rem; }
+  .idx b { font-size: 1.6rem; }
+  .card--back { padding: 1rem; }
+  .back-art span { display: none; }
+}
+@media (min-width: 761px) and (max-width: 880px) {
+  .hand { grid-template-columns: 1fr .7fr 1fr; }
+  .idx--end { display: none; } /* no room beside the quote button */
+}
+/* Phones: card back on top, face cards stacked below (refined in the 760px block) */
+@media (max-width: 760px) {
   .hand { grid-template-columns: repeat(2, minmax(0, 400px)); gap: 1.5rem; }
   .card--back {
     grid-row: 1; grid-column: 1 / -1; justify-self: center; width: 132px; min-height: 0; aspect-ratio: 5 / 7;
@@ -351,7 +377,7 @@ section { scroll-margin-top: 80px; }
     min-height: calc(var(--screen) - 65px - var(--back-h) - 2.25rem);
   }
   .hand { grid-template-columns: 1fr; margin-top: 0; }
-  .card--back { width: auto; height: var(--back-h); }
+  .card--back { width: auto; height: var(--back-h); transform: none; }
   .card--back .back-art img { width: calc(var(--back-h) * .35); }
   .card--r { grid-row: 3; }
   .card { min-height: 0; }
